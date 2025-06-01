@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Cadastro de Produtos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>cadastrar produto</h1>
+
+  <form id="form-produto">
+    <input type="hidden" id="produto-id" />
+    <input type="text" id="nome" placeholder="Nome do Produto" required />
+    <input type="number" id="preco" placeholder="Preço" required />
+    <input type="text" id="descricao" placeholder="Descrição" required />
+    <input type="url" id="imagem" placeholder="URL da Imagem" required />
+    <button type="submit">Salvar</button>
+  </form>
+
+  <h2>Produtos Cadastrados </h2>
+  <ul id="lista-produtos"></ul>
+
+  <a href="produtos.html">Ver Produtos</a>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Produtos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Produtos Cadastrados</h1>
+  <div id="cards-container"></div>
+
+  <script src="js/produtos.js"></script>
+</body>
+</html>
